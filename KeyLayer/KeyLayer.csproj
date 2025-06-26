@@ -8,4 +8,23 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="HidSharp" Version="2.1.0" />
+      <PackageReference Include="InputSimulator" Version="1.0.4" />
+      <PackageReference Include="Vanara.PInvoke.Kernel32" Version="4.1.6" />
+      <PackageReference Include="Vanara.PInvoke.User32" Version="4.1.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\" />
+      <Folder Include="Configs\" />
+      <Folder Include="Core\" />
+      <Folder Include="Models\" />
+      <Folder Include="Services\" />
+      <Folder Include="UI\Controls\" />
+      <Folder Include="UI\ViewModels\" />
+      <Folder Include="UI\Views\" />
+      <Folder Include="Utils\" />
+    </ItemGroup>
+
 </Project>
