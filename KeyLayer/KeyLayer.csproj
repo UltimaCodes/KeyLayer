@@ -1,25 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net8.0-windows</TargetFramework>
-        <Nullable>enable</Nullable>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <UseWPF>true</UseWPF>
-    </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
 
-    <ItemGroup>
-      <PackageReference Include="HidSharp" Version="2.1.0" />
-      <PackageReference Include="InputSimulator" Version="1.0.4" />
-      <PackageReference Include="Vanara.PInvoke.Kernel32" Version="4.1.6" />
-      <PackageReference Include="Vanara.PInvoke.User32" Version="4.1.6" />
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="HidSharp" Version="2.1.0" />
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="Vanara.PInvoke.Kernel32" Version="4.1.6" />
+    <PackageReference Include="Vanara.PInvoke.User32" Version="4.1.6" />
+  </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Assets\" />
-      <Folder Include="Configs\" />
-      <Folder Include="UI\Controls\" />
-      <Folder Include="Utils\" />
-    </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+    <Folder Include="Configs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="UI\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <XamlRuntime>Wpf</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
 
 </Project>
