@@ -19,7 +19,6 @@
       <Folder Include="Assets\" />
       <Folder Include="Configs\" />
       <Folder Include="UI\Controls\" />
-      <Folder Include="UI\ViewModels\" />
       <Folder Include="Utils\" />
     </ItemGroup>
 

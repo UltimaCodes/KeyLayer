@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:KeyLayer"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="HighlightBrush" Color="#FF007ACC"/>
+        <SolidColorBrush x:Key="TransparentBrush" Color="Transparent"/>
+
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+        <local:BoolToBrushConverter x:Key="BoolToHighlightBrush"
+                                    TrueBrush="{StaticResource HighlightBrush}"
+                                    FalseBrush="{StaticResource TransparentBrush}"/>
     </Application.Resources>
 </Application>
